@@ -1,0 +1,57 @@
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #44107a;
+    }
+    to {
+      text-shadow: 0 0 50px #ff1361, 0 0 10px #fff800;
+    }
+  }
+
+
+@keyframes SlideinLeft {
+    from {
+        transform: translateX(-500px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+
+@keyframes SlideinRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+h1.special-header {
+    animation: SlideinLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+h1.philosophy-header {
+    animation: SlideinRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+p.special-description:hover {
+    opacity: 1;
+    color: white;
+    animation: glow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+p.philosophy-description:hover {
+    opacity: 1;
+    color: white;
+    animation: glow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
